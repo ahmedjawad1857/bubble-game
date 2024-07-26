@@ -1,0 +1,134 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+/* Body Styling */
+html,
+body {
+  height: 100dvh;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(110, 197, 110);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pannel {
+  height: 90dvh;
+  width: 80%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#ptop {
+  height: 60px;
+  background-color: rgb(30, 136, 30);
+  display: flex;
+  padding: 20px 40px;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+}
+
+.elem {
+  /* width: 20%; */
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+  gap: 10px;
+}
+
+.elem h2 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.box {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  align-content: center;
+  color: rgb(30, 136, 30);
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+
+.box:hover {
+  background-color: rgb(12, 78, 12);
+  color: rgb(255, 255, 255);
+}
+
+#pbtm {
+  height: calc(100% - 60px);
+  /* overflow: hidden; */
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.bubble {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: rgb(30, 136, 30);
+  text-align: center;
+  align-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 800px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.bubble:hover {
+  background-color: rgb(12, 78, 12);
+}
+
+#pbtm h1 {
+  color: rgb(30, 136, 30);
+  width: 100%;
+  font-size: xx-large;
+  text-align: center;
+  align-content: center;
+  pointer-events: none;
+}
+
+@media (max-width: 650px) {
+  .pannel {
+    width: 90%;
+  }
+  #ptop {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  #ptop {
+    gap: 5px;
+  }
+}
+/* SweetAlert */
+.swal-popup-small {
+  width: 200px !important;
+  height: fit-content !important;
+}
+
+.swal-icon-small {
+  font-size: 0.5em !important;
+}
+
+.swal-title-small {
+  font-size: 1em !important;
+}
